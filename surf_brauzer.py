@@ -53,7 +53,7 @@ while True:
             pyautogui.hotkey('enter')
 
             f = open("logs_open.txt", "a")
-            f.write(num_link_s+':')
+            f.write(num_link_s +':'+ '\n')
             f.close()
             time.sleep(45)
         else:
@@ -61,9 +61,9 @@ while True:
             nonlocate = pyautogui.locateCenterOnScreen('close_lx.png')
             if nonlocate != None:
                 f = open("logs_close.txt", "a")
-                f.write(num_link_s + ':')
+                f.write(num_link_s + ':' + '\n')
                 f.close()
             else:
                 f = open("logs_bug.txt", "a")
-                f.write(num_link_s + ':')
+                f.write(num_link_s + ':' + '\n')
                 f.close()
